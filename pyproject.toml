@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "lectureproject-django"
+version = "0.1.0"
+description = "강의사이트 제작"
+authors = ["백관열 <djm030@naver.com>"]
+readme = "README.md"
+packages = [{include = "lectureproject_django"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.1.7"
+djangorestframework = "^3.14.0"
+pylint = "^2.16.2"
+strawberry-graphql = {extras = ["debug-server"], version = "^0.159.0"}
+django-cors-headers = "^3.14.0"
+pyjwt = "^2.6.0"
+python-dotenv = "^1.0.0"
+faker = "^17.6.0"
+django-seed = "^0.3.1"
+djangorestframework-simplejwt = "^5.2.2"
+decouple = "^0.0.7"
+mysqlclient = "^2.1.1"
+moviepy = "^1.0.3"
+boto3 = "^1.26.98"
+django-allauth = "^0.53.1"
+dj-rest-auth = "^3.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
